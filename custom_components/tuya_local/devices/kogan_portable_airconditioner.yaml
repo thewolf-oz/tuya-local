@@ -17,16 +17,16 @@ primary_entity:
         - dps_val: true
           constraint: mode
           conditions:
-            - dps_val: cold
+            - dps_val: "cold"
               icon: "mdi:snowflake"
               value: cool
-            - dps_val: wind
+            - dps_val: "wind"
               icon: "mdi:fan"
               value: fan_only
-            - dps_val: wet
+            - dps_val: "wet"
               icon: "mdi:water"
               value: dry
-            - dps_val: hot
+            - dps_val: "hot"
               value: heat
               icon: "mdi:heat-wave"
     - id: 2
@@ -49,7 +49,7 @@ primary_entity:
     - id: 4
       name: mode
       type: string
-      hidden: true
+      #hidden: true
 
 
           # conditions:
