@@ -17,18 +17,18 @@ primary_entity:
         - dps_val: true
           constraint: mode
           conditions:
-            - dps_val: COOL
+            - dps_val: cold
               icon: "mdi:snowflake"
-              value: cold
-            - dps_val: FAN
+              value: cool
+            - dps_val: wind
               icon: "mdi:fan"
-              value: wind
-            - dps_val: DRY
+              value: fan_only
+            - dps_val: wet
               icon: "mdi:water"
-              value: wet
-            - dps_val: HEAT
-              icon: "mdi:fire"
-              value: hot
+              value: dry
+            - dps_val: hot
+              value: heat
+              icon: "mdi:heat-wave"
     - id: 2
       name: temperature
       type: integer
@@ -50,6 +50,23 @@ primary_entity:
       name: mode
       type: string
       hidden: true
+
+
+          # conditions:
+          #   - dps_val: COOL
+          #     icon: "mdi:snowflake"
+          #     value: cold
+          #   - dps_val: FAN
+          #     icon: "mdi:fan"
+          #     value: wind
+          #   - dps_val: DRY
+          #     icon: "mdi:water"
+          #     value: wet
+          #   - dps_val: HEAT
+          #     icon: "mdi:fire"
+          #     value: hot
+
+
     - id: 5
       name: fan_mode
       type: integer
@@ -64,7 +81,7 @@ primary_entity:
       name: temperature_unit
       type: string
     - id: 101
-      name: unknown_101
+      name: quiet_mode
       type: boolean
     - id: 102
       name: unknown_102
